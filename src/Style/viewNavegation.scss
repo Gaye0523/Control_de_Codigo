@@ -1,0 +1,101 @@
+@import 'styleGeneral.scss';
+
+.logo{
+  margin-left: 40%;
+  margin-top: 3%;
+}
+
+.contarineNavigation{
+  width: 25%;
+  height: 20%;
+  margin-left: 65%;
+  margin-top: -5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+  spam{
+    font-family: Open-Sans;
+    font-size: 0.8vw;
+    margin-left: 5px;
+    margin-top: -1;
+    color: rgba(105, 107, 110, 1);
+  }
+
+  .svg-inline--fa{
+    font-size: 20px;
+    color: rgba(105, 107, 110, 1);
+  }
+}
+
+.containerMenu{
+  width: 80%;
+  height: 20%;
+  margin-left: 10%;
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: 0.8vw;
+  font-family: Open-Sans;
+  color: rgba(105, 107, 110, 1);
+  list-style: none;
+
+  .menu{
+    cursor: pointer;
+  }
+
+  .menu1{
+    color: red;
+    cursor: pointer;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .logo{
+    margin-left: 25%;
+  }
+
+  .contarineNavigation{
+    margin-top: -18%;
+
+    .tiendas{
+      display: none;
+    }
+
+    .deseos{
+      display: none;
+    }
+
+    .bolsa{
+      display: none;
+    }
+
+    .icon{
+      position: fixed;
+    }
+  }
+
+  .containerMenu{
+    display: none;
+    flex-flow: column nowrap;
+    top: 6%;
+    right: 65%;
+    height: 60px;
+    width: 100px;
+    position: fixed;
+
+    li{
+      font-size: 3vw;
+      padding-bottom: 4%;
+    }
+  }
+
+
+}
+
+
+
+

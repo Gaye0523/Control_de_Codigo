@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react';
+import ViewNavegation from './Components/viewNavegation.jsx';
+import ViewSend from './Components/viewSend.jsx';
+import ViewSummary from './Components/viewSummary.jsx';
+import ViewBurger from './Components/viewBurger.jsx';
+import './Style/styleGeneral.scss';
+import './Style/viewNavegation.scss';
+import './Style/viewSend.scss'; 
+import './Style/viewSummary.scss';
+import './Style/viewBurger.scss';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <ViewBurger />
+      <ViewNavegation />
+      <div className="containerGlobal">
+      <ViewSend />
+      <ViewSummary />
+      </div>
+
+    </Fragment>
+
   );
 }
-
 export default App;

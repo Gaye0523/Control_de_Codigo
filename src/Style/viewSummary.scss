@@ -1,0 +1,187 @@
+@import 'styleGeneral.scss';
+
+.containerGlobal {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.containerSummary {
+  border: 1px solid rgb(200, 203, 209);
+  width: 25%;
+  height: 60%;
+  margin-top: 3%;
+  margin-right: 11%;
+
+  .titleOrder {
+    width: 100%;
+    height: 40px;
+    background-color: rgb(181, 192, 209);
+    text-align: center;
+    line-height: 40px;
+  }
+}
+
+.containerProducts {
+  display: flex;
+  flex-direction: column;
+
+  .containerSecadora {
+    border-bottom: 1px solid rgb(181, 192, 209);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+
+
+
+    .secadora {
+      width: 25%;
+      height: 75px;
+    }
+
+    p {
+      font-family: Open-Sans;
+      font-size: 0.6vw;
+      color: rgba(105, 107, 110, 1);
+      margin-top: 8%;
+      margin-right: 5%;
+    }
+  }
+
+  .containerCofre {
+    border-bottom: 1px solid rgb(181, 192, 209);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+
+
+    .cofre {
+      width: 25%;
+      height: 75px;
+    }
+
+    p {
+      font-family: Open-Sans;
+      font-size: 0.6vw;
+      color: rgba(105, 107, 110, 1);
+      margin-top: 8%;
+      margin-right: 5%;
+    }
+
+  }
+
+  .containerCofre1 {
+    border-bottom: 1px solid rgb(181, 192, 209);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 3%;
+
+
+    .cofre1 {
+      width: 25%;
+      height: 75px;
+      margin-left: 2%;
+    }
+
+    p {
+      font-family: Open-Sans;
+      font-size: 0.6vw;
+      color: rgba(105, 107, 110, 1);
+      margin-top: 8%;
+      margin-right: 5%;
+    }
+  }
+}
+
+.containerButtonOrder {
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgb(181, 192, 209);
+
+  button {
+    width: 25%;
+    height: 30px;
+    margin-top: 5%;
+    margin-left: 70%;
+    font-family: Open-Sans;
+    background-color: rgba(202, 17, 65, 1);
+    color: white;
+  }
+}
+
+.containerInfoOrder{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color:  rgb(213, 218, 224);
+
+  .infoOrder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-family: Open-Sans;
+    font-weight: 600;
+  }
+
+  .containerValorOrder{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: 2%;
+    font-family: Open-Sans;
+    font-weight: 600;
+  }
+
+}
+
+.containerTotal{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+  color: white;
+  font-weight: 600;
+
+  .total{
+    margin-top: 2%;
+    margin-left: 3%;
+  }
+
+  .valor{
+    margin-top: 2%;
+    margin-right: 3%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .containerGlobal {
+    width: 100%;
+    margin-top: 20%;
+    flex-direction: column;
+}
+
+.containerSummary{
+  width: 85%;
+    margin-left: 7%;
+    margin-top: 2%;
+    margin-bottom: 10%;
+
+    .containerProducts{
+
+      p{
+        font-size: 3vw;
+      }
+    }
+}
+}
+
